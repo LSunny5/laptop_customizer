@@ -6,6 +6,9 @@ import slugify from 'slugify';
 
 import './App.css';
 
+//added by Sunny Lee
+import Header from './Header/Header';
+
 // This object will allow us to
 // easily convert numbers into US dollar values
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
@@ -97,9 +100,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header>
-          <h1>ELF Computing | Laptops</h1>
-        </header>
+        <Header /> 
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
