@@ -14,6 +14,7 @@ class Summary extends React.Component {
                     featureHash={featureHash}
                     selectedOption={selectedOption}
                     USCurrencyFormat={this.props.USCurrencyFormat}
+                    key={idx}
                 />
             );
         });

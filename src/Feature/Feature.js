@@ -14,8 +14,6 @@ class Feature extends React.Component {
             const options = this.props.features[feature].map(item => {
               const itemHash = slugify(JSON.stringify(item));
               return (
-              
-              
                 <div key={itemHash} className="feature__item">
                   <input
                     type="radio"
@@ -29,13 +27,8 @@ class Feature extends React.Component {
                     {item.name} ({this.props.USCurrencyFormat.format(item.cost)})
                   </label>
                 </div>
-
               );
             });
-      
-
-
-
 
             return (
                 <FeatureChoice 
@@ -43,6 +36,7 @@ class Feature extends React.Component {
                     feature={feature}
                     options={options}
                     USCurrencyFormat={this.props.USCurrencyFormat}
+                    key={idx}
                 />
             );
           });
